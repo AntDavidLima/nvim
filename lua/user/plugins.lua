@@ -59,10 +59,29 @@ return packer.startup(function(use)
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
+  use {
+    "MaximilianLloyd/ascii.nvim",
+    requires = { "MunifTanjim/nui.nvim" },
+    commit = "068b098b6d301bb87988ea749b66bed641072121",
+  }
+  use {
+    "dgrbrady/nvim-docker",
+    requires = { "nvim-lua/plenary.nvim", "MunifTanjim/nui.nvim" },
+  }
+  use { "karb94/neoscroll.nvim", commit = "d7601c26c8a183fa8994ed339e70c2d841253e93" }
+  use { "windwp/nvim-ts-autotag", commit = "25698e4033cd6cd3745454bfc837dd670eba0480" }
+  use {
+    "folke/which-key.nvim",
+    commit = "87b1459b3e0be0340da2183fc4ec8a00b2960678",
+    config = function()
+      vim.o.timeoutlen = 200
+    end,
+  }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
+  use { "dracula/vim", commit = "eb577d47b0cfc9191bf04c414b4042d5f1a980f8", as = "dracula" }
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
@@ -83,6 +102,7 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" }
   use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" }
+  use { "mfussenegger/nvim-jdtls", commit = "34202bc141620858159616ff79bd8a3c48c34214" }
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
