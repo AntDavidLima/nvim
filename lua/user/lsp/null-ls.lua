@@ -20,6 +20,7 @@ null_ls.setup {
     formatting.eslint_d,
     diagnostics.eslint_d,
     code_actions.eslint_d,
+    diagnostics.misspell,
     diagnostics.jsonlint,
   },
 }

@@ -16,6 +16,7 @@ local check_backspace = function()
 end
 
 local kind_icons = {
+  TabNine = "󰚩",
   Text = "",
   Method = "",
   Function = "",
@@ -98,6 +99,7 @@ cmp.setup {
       vim_item.kind = kind_icons[vim_item.kind]
       vim_item.menu = ({
         luasnip = "",
+        cmp_tabnine = "",
         nvim_lsp = "",
         path = "",
         nvim_lua = "",
@@ -108,6 +110,7 @@ cmp.setup {
     end,
   },
   sources = {
+    { name = "cmp_tabnine" },
     { name = "luasnip" },
     { name = "nvim_lsp" },
     { name = "path" },
