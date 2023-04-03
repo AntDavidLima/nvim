@@ -86,7 +86,7 @@ return packer.startup(function(use)
   }
   use { "kamykn/spelunker.vim", commit = "a0bc530f62798bbe053905555a4aa9ed713485eb" }
   use { "codota/tabnine-nvim", run = "./dl_binaries.sh", commit = "3b4c3e681fcf1460844b52939d7f9d711872ba8b" }
-  use { "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" }
+  use { "wakatime/vim-wakatime", commit = "3b3d7f3d0fb4a476a7d1ef4d6f41e31050bdf52a" }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
@@ -100,6 +100,7 @@ return packer.startup(function(use)
   use { "saadparwaiz1/cmp_luasnip", commit = "a9de941bcbda508d0a45d28ae366bb3f08db2e36" } -- snippet completions
   use { "hrsh7th/cmp-nvim-lsp", commit = "affe808a5c56b71630f17aa7c38e15c59fd648a8" }
   use { "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" }
+  use { "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" }
 
   -- snippets
   use { "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" }             --snippet engine
