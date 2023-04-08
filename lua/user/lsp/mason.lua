@@ -7,6 +7,7 @@ local servers = {
   "jdtls",
   "sqls",
   "tsserver",
+  "angularls",
 }
 
 local settings = {

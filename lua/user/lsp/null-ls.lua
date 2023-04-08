@@ -17,10 +17,10 @@ null_ls.setup {
     formatting.stylua,
     formatting.sql_formatter,
     formatting.prettier,
-    formatting.eslint_d,
-    diagnostics.eslint_d,
-    code_actions.eslint_d,
     diagnostics.misspell,
     diagnostics.jsonlint,
+    diagnostics.eslint_d,
+    formatting.eslint_d,
+    code_actions.eslint_d,
   },
 }

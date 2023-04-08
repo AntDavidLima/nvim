@@ -82,8 +82,12 @@ M.on_attach = function(client, bufnr)
     client.server_capabilities.documentFormattingProvider = false
   end
 
-  if client.name == "tsserver" then
+  if client.name == "tsserver" and vim.bo.filetype ~= "typescript" then
     client.handlers["textDocument/publishDiagnostics"] = function() end
+  end
+
+  if client.name == "tsserver" then
+    client.server_capabilities.documentFormattingProvider = false
   end
 
   lsp_keymaps(bufnr)
