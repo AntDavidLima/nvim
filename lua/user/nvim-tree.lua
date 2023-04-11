@@ -20,8 +20,8 @@ nvim_tree.setup {
     root_folder_modifier = ":t",
     icons = {
       glyphs = {
-        default = "",
-        symlink = "",
+        default = "",
+        symlink = "󱅸",
         folder = {
           arrow_open = "",
           arrow_closed = "",
@@ -30,15 +30,15 @@ nvim_tree.setup {
           empty = "",
           empty_open = "",
           symlink = "",
-          symlink_open = "",
+          symlink_open = "",
         },
         git = {
-          unstaged = "",
-          staged = "S",
-          unmerged = "",
-          renamed = "➜",
-          untracked = "U",
-          deleted = "",
+          unstaged = "",
+          staged = "",
+          unmerged = "󰅰",
+          renamed = "󰑕",
+          untracked = "",
+          deleted = "󰚃",
           ignored = "◌",
         },
       },
